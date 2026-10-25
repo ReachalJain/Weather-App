@@ -1,0 +1,136 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #dff6ff, #f5e6ff);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+#root > div {
+  width: 100%;
+  max-width: 650px;
+  padding: 45px;
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 12px 35px rgba(40, 70, 100, 0.15);
+  text-align: center;
+}
+
+h1 {
+  color: #24566b;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: clamp(32px, 5vw, 52px);
+  white-space: nowrap;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #cbdde5;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 12px;
+}
+
+input:focus {
+  border-color: #2999b5;
+  box-shadow: 0 0 0 3px rgba(41, 153, 181, 0.12);
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 10px;
+  background: #278ba5;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #176b83;
+}
+
+h2 {
+  margin: 20px 0;
+  color: #24566b;
+  overflow-wrap: anywhere;
+}
+
+p {
+  color: #526b78;
+  overflow-wrap: anywhere;
+}
+
+/* Mobile responsive design */
+@media (max-width: 480px) {
+  #root {
+    padding: 12px;
+    align-items: center;
+  }
+
+  #root > div {
+    padding: 28px 18px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    font-size: clamp(27px, 7vw, 32px);
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+.main-details,
+.location-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.main-details h2,
+.location-details p {
+  margin: 10px 0;
+}
+
+.main-details h2 {
+  font-size: 20px;
+}
+
+.location-details p {
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  .main-details,
+  .location-details {
+    flex-direction: column;
+    gap: 0;
+  }
+}
