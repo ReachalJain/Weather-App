@@ -1,7 +1,9 @@
 # 🌦️ Weather App using API Integration
 
 A responsive weather application built with React and Vite that fetches real-time weather information for cities around the world using the Open-Meteo API.
- ![Uploading image.png…]()
+
+  <img width="763" height="611" alt="image" src="https://github.com/user-attachments/assets/d9b6f8c2-d151-43d2-a6dd-342cc180c7b1" />
+
 
 
 
